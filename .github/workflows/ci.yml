@@ -27,6 +27,10 @@
             working-directory: ./codebase/rdicidr-0.1.0
             run: npm run lint
     
+          - name: Installing Prettier 
+            working-directory: ./codebase/rdicidr-0.1.0
+            run: npm install -g prettier
+    
           - name: Formatter (Prettier)
             working-directory: ./codebase/rdicidr-0.1.0
             run: npm run prettier
@@ -40,3 +44,4 @@
           - name: Build
             working-directory: ./codebase/rdicidr-0.1.0
             run: npm run build
+            
